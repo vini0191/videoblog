@@ -1,0 +1,13 @@
+01 - Navbar
+02 - Body (color)
+03 - Footer
+04 - Emboddied videos
+05 - Grid
+
+06 - Routes
+
+07 - Pagination
+08 - Login (social networks)
+09 - Contact form
+10 - Hosting (Cloudflare, Firebase...)
+11 - Insert Ads
