@@ -9,14 +9,12 @@ export const MainCointainer = styled.div`
   padding: 50px;
 
   a {
-    /* width: 33.33%; */
     margin: 10px;
-    /* height: auto; */
-    border: 1px solid red;
+    padding: 0;
+    /* border: 1px solid red; */
 
     img {
-      width: 200px;
-      /* height: auto; */
+      width: 250px;
     }
   }
 `;
