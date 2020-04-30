@@ -24,7 +24,11 @@ export const VideoContainer = styled.div`
   margin: 10px;
 `;
 
-// export const ImageButton = styled.img`
-//   width: 33.33%;
-//   border: 1px solid red;
+// export const Thumbnails = styled.a`
+//   margin: 10px;
+//   padding: 0;
+
+//   img {
+//     width: 250px;
+//   }
 // `;
