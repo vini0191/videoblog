@@ -18,17 +18,3 @@ export const MainCointainer = styled.div`
     }
   }
 `;
-
-export const VideoContainer = styled.div`
-  width: 250px;
-  margin: 10px;
-`;
-
-// export const Thumbnails = styled.a`
-//   margin: 10px;
-//   padding: 0;
-
-//   img {
-//     width: 250px;
-//   }
-// `;

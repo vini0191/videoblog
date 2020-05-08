@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { MainCointainer, Thumbnails } from "./Main.style";
+import { Link } from "react-router-dom";
+import { MainCointainer } from "./Main.style";
 import videolinks from "./videolinksArray";
 
 class Main extends Component {
@@ -9,18 +10,18 @@ class Main extends Component {
 
   handleThumbnails = (videolinks) =>
     videolinks.map(({ link, image }, index) => (
-      <a key={index} href={link} target="_blank" rel="noopener noreferrer">
+      // <a key={index} href={link} target="_blank" rel="noopener noreferrer">
+      //   <img src={image} alt="" />
+      // </a>
+      <Link key={index + 1} to={`/video/${index + 1}`}>
         <img src={image} alt="" />
-      </a>
+      </Link>
     ));
 
   render() {
     return (
       <MainCointainer>
         {this.handleThumbnails(this.state.videolinks)}
-        {/* <Thumbnails> */}
-        {/* {() => this.handleThumbnails(this.state.videolinks)} */}
-        {/* </Thumbnails> */}
       </MainCointainer>
     );
   }
