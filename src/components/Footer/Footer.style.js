@@ -4,9 +4,9 @@ export const FootContainer = styled.div`
   display: flex;
   justify-content: center;
   /* Check about the position combined with the other props below */
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 100%; */
 `;
 
 export const FootButton = styled.div`
