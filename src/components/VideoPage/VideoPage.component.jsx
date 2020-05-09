@@ -1,18 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import { VideoContainer } from "./VideoPage.style";
 import videolinks from "../Main/videolinksArray";
-
-// class VideoPage extends React.Component {
-//   state = {};
-
-//   // componentDidMount() {
-//   //   const { handle } = this.props.match.params;
-//   // }
-//   render() {
-//     return <h3>Video Page</h3>;
-//   }
-// }
 
 const VideoPage = ({ match }) => {
   const {

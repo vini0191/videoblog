@@ -1,4 +1,5 @@
 import React from "react";
+
 import { FootContainer, FootButton } from "./Footer.style";
 
 const Footer = () => (

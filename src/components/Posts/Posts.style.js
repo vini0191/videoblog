@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MainCointainer = styled.div`
+export const PostsCointainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
