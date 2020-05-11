@@ -1,9 +1,11 @@
 import React from "react";
 
 import { ContactContainer } from "./Contact.style";
+import img_form from "../../assets/images/img_form.jpg";
 
 const Contact = () => (
   <ContactContainer>
+    <img src={img_form} alt="" />
     <form
       id="contactform"
       action="https://formsubmit.io/send/ebaf272f-0e6b-441c-8c2a-7881d541c7be"
