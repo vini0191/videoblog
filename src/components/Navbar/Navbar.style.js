@@ -10,6 +10,11 @@ export const HomeButton = styled.div`
   align-items: center;
   flex: 1 auto;
   background: gray;
+
+  a {
+    display: flex;
+    flex-direction: row;
+  }
 `;
 
 export const NavButton = styled.div`
