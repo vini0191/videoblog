@@ -18,7 +18,8 @@ const Main = () => {
 
   useEffect(() => {
     setLoading(true);
-    setPosts(videolinks);
+    // setPosts(videolinks.reverse());
+    setPosts([...videolinks].reverse());
     setLoading(false);
   }, []);
 
