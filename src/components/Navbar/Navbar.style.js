@@ -16,6 +16,16 @@ export const HomeButton = styled.div`
   a {
     display: flex;
     flex-direction: row;
+    /* justify-content: center; */
+
+    img {
+      width: 50%;
+      margin-right: 10px;
+    }
+
+    h2 {
+      align-self: center;
+    }
   }
 `;
 

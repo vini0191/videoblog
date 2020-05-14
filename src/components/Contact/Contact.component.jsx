@@ -1,8 +1,12 @@
 import React from "react";
 
-import { ContactContainer } from "./Contact.style";
+import {
+  ContactContainer,
+  ContactText,
+  ContactForm,
+  Donation,
+} from "./Contact.style";
 import img_form from "../../assets/images/img_form.jpg";
-import { ContactText } from "./Contact.style";
 
 // const ConText = () => (
 //   <ContactText>
@@ -12,13 +16,12 @@ import { ContactText } from "./Contact.style";
 // );
 
 const Contact = () => (
-  <>
+  <ContactContainer>
     <ContactText>
       Entre em contato através do formulário abaixo para tirar dúvidas, propor
       parcerias e sugerir novos vídeos e conteúdos
     </ContactText>
-
-    <ContactContainer>
+    <ContactForm>
       <img src={img_form} alt="" />
       <form
         id="contactform"
@@ -40,12 +43,12 @@ const Contact = () => (
 
         <input type="submit" value="Enviar" />
       </form>
-      <h2>
-        APOIE Este site é uma homenagem ao Corinthians e mantido por torcedores.
-        Sinta-se livre para nos apoiar, através de uma das opções abaixo:
-      </h2>
-    </ContactContainer>
-  </>
+    </ContactForm>
+    <Donation>
+      APOIE Este site é uma homenagem ao Corinthians e mantido por torcedores.
+      Sinta-se livre para nos apoiar, através de uma das opções abaixo:
+    </Donation>
+  </ContactContainer>
 );
 
 export default Contact;

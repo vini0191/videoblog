@@ -8,6 +8,7 @@ const VideoPage = ({ match }) => {
   const {
     params: { videoId },
   } = match;
+  const { title, link } = videolinks[videoId - 1];
 
   return (
     <>
@@ -22,11 +23,11 @@ const VideoPage = ({ match }) => {
         <strong>Video URL: </strong>
         {videolinks[videoId - 1].link}
       </p> */}
-        <h1>Título</h1>
+        <h1>{title}</h1>
         <VideoContainer>
           <iframe
             title={videoId}
-            src={videolinks[videoId - 1].link}
+            src={link}
             frameBorder={0}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
