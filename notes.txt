@@ -15,3 +15,39 @@ To do:
 10 - Login (social networks)
 11 - Hosting (Cloudflare, Firebase...)
 12 - Insert Ads
+
+========================================
+Ajustes de conteudo:
+
+- incluir titulo nos videos
+- incluir likes
+- definir fonte, tamanho, cores
+
+Nome to blog
+MemorialCorinthians
+PoderosoTimao
+TimaoEterno
+CorinthiansEterno
+Mitos do Timao
+Vitorias Corinthianas
+Vitorias do Timao
+Corinthians Invicto
+
+Reunimos os vídeos mais importantes da história do Corinthians, desde o Paulista de 77 até momentos marcantes das conquistas da Libertadores e do Mundial. Compartilhe com os amigos e celebre registros inesquecíveis da história do Timão.
+
+APOIE
+Este site é uma homenagem ao Corinthians e mantido por torcedores. Sinta-se livre para nos apoiar, através de uma das opções abaixo:
+
+PicPay
+BuymeaCoffee
+Bitcoin
+Pagarme
+PagSeguro
+
+CONTATO
+Entre em contato através do formulário abaixo para tirar dúvidas, propor parcerias e sugerir novos vídeos e conteúdos
+
+NAVBAR
+Campeonatos
+Atletas
+Jogos Completos
