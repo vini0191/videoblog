@@ -31,7 +31,7 @@ export const VideoContainer = styled.div`
 
 export const AdUnitRectangle = styled.div`
   background: orange;
-  border: 5px solid white;
+  border: 2px solid white;
   width: 728px;
   height: 90px;
   align-self: center;

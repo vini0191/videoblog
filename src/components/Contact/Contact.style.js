@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -17,7 +17,6 @@ export const ContactContainer = styled.div`
     display: flex;
     /* margin: 20px 0; */
     margin: 0;
-    border: 1px solid green;
     flex-direction: column;
     /* width: 70%; */
     /* flex: 70%; */
@@ -28,7 +27,6 @@ export const ContactContainer = styled.div`
     background: #272c35;
 
     h1 {
-      border: 1px solid green;
       margin: 10px 20px;
     }
 
@@ -60,4 +58,15 @@ export const ContactContainer = styled.div`
   }
 `;
 
+export const ContactText = styled.h2`
+  margin: 50px 50px;
+  font-size: 24px;
+`;
+
+export const ContactForm = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const Donation = styled.h2``;
 // 784 x 590
