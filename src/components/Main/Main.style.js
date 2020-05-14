@@ -12,7 +12,7 @@ export const Content = styled.div`
 
 export const AdUnitVertical = styled.div`
   background: orange;
-  border: 5px solid white;
+  border: 2px solid white;
   width: 160px;
   height: 600px;
   margin: 0 30px;
@@ -22,9 +22,14 @@ export const AdUnitVertical = styled.div`
 
 export const AdUnitRectangle = styled.div`
   background: orange;
-  border: 5px solid white;
+  border: 2px solid white;
   width: 728px;
   height: 90px;
   align-self: center;
   margin: 20px 0;
+`;
+
+export const MainText = styled.div`
+  margin: 50px 50px;
+  font-size: 24px;
 `;

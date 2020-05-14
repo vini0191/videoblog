@@ -5,6 +5,7 @@ import {
   Content,
   AdUnitVertical,
   AdUnitRectangle,
+  MainText,
 } from "./Main.style";
 import Posts from "../Posts/Posts.component";
 import Pagination from "../Pagination/Pagination.component";
@@ -33,13 +34,13 @@ const Main = () => {
 
   return (
     <MainContainer>
-      <h2>
-        VideoBlog do Corinthians. Esta plataforma pode ser customizada para
-        qualquer tema e assunto do seu interesse, desde videos de memes, até
-        notícias, receitas e o que mais considerar interessante. Entre em
-        contato com a Codecaravan para conhecer nossos incríveis serviços de
-        tecnologia e design.
-      </h2>
+      <MainText>
+        Bem vindo ao Memorial do Corinthians! Reunimos os vídeos mais
+        importantes da história do Corinthians, desde o Paulista de 77 até
+        momentos marcantes das conquistas da Libertadores e do Mundial.
+        Compartilhe com os amigos e celebre registros inesquecíveis nesta
+        trajetória do Timão.
+      </MainText>
       <AdUnitRectangle />
       {/* <h1>Videos!</h1> */}
       <Content>

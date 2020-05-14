@@ -60,4 +60,8 @@ export const ContactContainer = styled.div`
   }
 `;
 
+export const ContactText = styled.div`
+  margin: 50px 50px;
+  font-size: 24px;
+`;
 // 784 x 590
