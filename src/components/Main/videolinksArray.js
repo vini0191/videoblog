@@ -17,7 +17,7 @@ const videoLinks = [
   },
   {
     id: 3,
-    title: "Este é o título para todos",
+    title: "Ulrich",
     link: "https://www.youtube.com/embed/T09xdwPSqIQ",
     image: "https://img.youtube.com/vi/T09xdwPSqIQ/maxresdefault.jpg",
     tags: [tags[0], tags[2]],
@@ -59,7 +59,7 @@ const videoLinks = [
   },
   {
     id: 9,
-    title: "Este é o título para todos",
+    title: "Ulrich",
     link: "https://google.com",
     image: "https://img.youtube.com/vi/ysz5S6PUM-U/maxresdefault.jpg",
     tags: [tags[0], tags[2]],
@@ -339,7 +339,7 @@ const videoLinks = [
   },
   {
     id: 49,
-    title: "Este é o título para todos",
+    title: "Ulrich",
     link: "https://www.youtube.com/embed/tkmZcobVO0Y",
     image: "http://i3.ytimg.com/vi/tkmZcobVO0Y/maxresdefault.jpg",
     tags: [tags[2]],
