@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { VideoUnit, VideoContainer, AdUnitRectangle } from "./VideoPage.style";
-import videolinks from "../Main/videolinksArray";
+import videoLinks from "../Main/videoLinksArray";
 
 const VideoPage = ({ match }) => {
   const {
     params: { videoId },
   } = match;
-  const { title, link } = videolinks[videoId - 1];
+  const { title, link } = videoLinks[videoId - 1];
 
   return (
     <>
@@ -21,7 +21,7 @@ const VideoPage = ({ match }) => {
       </p>
       <p>
         <strong>Video URL: </strong>
-        {videolinks[videoId - 1].link}
+        {videoLinks[videoId - 1].link}
       </p> */}
         <h1>{title}</h1>
         <VideoContainer>

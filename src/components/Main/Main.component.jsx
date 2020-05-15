@@ -7,30 +7,50 @@ import {
   AdUnitRectangle,
   MainText,
 } from "./Main.style";
-import Posts from "../Posts/Posts.component";
+import Videos from "../Videos/Videos.component";
 import Pagination from "../Pagination/Pagination.component";
-import videolinks from "./videolinksArray";
+import videoLinks from "./videoLinksArray";
 
 const Main = () => {
-  const [posts, setPosts] = useState([]);
+  const [videos, setVideos] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(16);
+  const [videosPerPage] = useState(16);
+  const [search, setSearch] = useState("");
+  // const [filteredVideos, setFilteredVideos] = useState([]);
 
   useEffect(() => {
     setLoading(true);
-    // setPosts(videolinks.reverse());
-    setPosts([...videolinks].reverse());
+    setVideos([...videoLinks].reverse());
     setLoading(false);
   }, []);
 
-  // Get current posts
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  // Get current videos
+  const indexOfLastVideo = currentPage * videosPerPage;
+  const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
+  const currentVideos = videos.slice(indexOfFirstVideo, indexOfLastVideo);
+
+  // useEffect(() => {
+  //   setFilteredVideos(
+  //     currentVideos.filter((currentVideo) =>
+  //       currentVideo.title.toLowerCase().includes(search.toLowerCase())
+  //     )
+  //   );
+  // }, [search, currentVideos]);
 
   // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  // Filter videos
+  const filteredVideos = currentVideos.filter((currentVideo) =>
+    currentVideo.title.toLowerCase().includes(search.toLowerCase())
+  );
+
+  // const filteredVideos = setVideos(
+  //   videoLinks.filter((currentVideo) =>
+  //     currentVideo.title.toLowerCase().includes(search.toLowerCase())
+  //   )
+  // );
 
   return (
     <MainContainer>
@@ -43,13 +63,21 @@ const Main = () => {
       </MainText>
       <AdUnitRectangle />
       {/* <h1>Videos!</h1> */}
+      <input
+        type="text"
+        placeholder="Busca"
+        onChange={(e) => setSearch(e.target.value)}
+      />
       <Content>
-        <Posts posts={currentPosts} loading={loading} />
+        <Videos videos={filteredVideos} loading={loading} />
         <AdUnitVertical />
       </Content>
       <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={posts.length}
+        videosPerPage={videosPerPage}
+        totalVideos={videos.length}
+        // totalVideos={
+        //   search === "" ? videoLinks.length : setVideos(filteredVideos)
+        // }
         paginate={paginate}
       />
       <AdUnitRectangle />

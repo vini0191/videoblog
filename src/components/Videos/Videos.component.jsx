@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { PostsCointainer } from "./Posts.style";
+import { VideosCointainer } from "./Videos.style";
 
-const Posts = ({ posts, loading }) => {
+const Videos = ({ videos, loading }) => {
   if (loading) return <h2>Carregando...</h2>;
 
   return (
-    <PostsCointainer>
-      {posts.map(({ id, title, image }) => (
+    <VideosCointainer>
+      {videos.map(({ id, title, image }) => (
         <Link key={id} to={`/video/${id}`}>
           <img src={image} alt="" />
           <p>{title}</p>
         </Link>
       ))}
-    </PostsCointainer>
+    </VideosCointainer>
   );
 };
 
-export default Posts;
+export default Videos;
