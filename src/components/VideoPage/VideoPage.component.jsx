@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { VideoUnit, VideoContainer, AdUnitRectangle } from "./VideoPage.style";
-import videoLinks from "../Main/videoLinksArray";
+import { videoLinks } from "../Main/videoLinksArray";
 
 const VideoPage = ({ match }) => {
   const {

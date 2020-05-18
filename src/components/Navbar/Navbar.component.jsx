@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import videoLinks from "../Main/videoLinksArray";
 
+import { tags, videoLinks } from "../Main/videoLinksArray";
 import { NavContainer, HomeButton, NavButton } from "./Navbar.style";
 import logo from "../../assets/images/tlogo.jpg";
 
 const Navbar = ({ setVideos }) => {
-  const tags = ["campeonatos", "jogadores", "jogos_completos"];
-  // const selectTag =(tag)=> [...videoLinks].reverse().filter((video) => video.tags.includes(tag);
+  const filterTakedArray = (tag) =>
+    [...videoLinks].reverse().filter((video) => video.tags.includes(tag));
 
   return (
     <NavContainer>
@@ -17,38 +17,20 @@ const Navbar = ({ setVideos }) => {
           <h2>Memorial Corinthians</h2>
         </Link>
       </HomeButton>
-      <NavButton
-        onClick={() =>
-          setVideos(
-            [...videoLinks]
-              .reverse()
-              .filter((video) => video.tags.includes(tags[0]))
-          )
-        }
-      >
-        Campeonatos
+      <NavButton>
+        <Link onClick={() => setVideos(filterTakedArray(tags[0]))} to="/">
+          Campeonatos
+        </Link>
       </NavButton>
-      <NavButton
-        onClick={() =>
-          setVideos(
-            [...videoLinks]
-              .reverse()
-              .filter((video) => video.tags.includes(tags[1]))
-          )
-        }
-      >
-        Jogadores
+      <NavButton>
+        <Link onClick={() => setVideos(filterTakedArray(tags[1]))} to="/">
+          Jogadores
+        </Link>
       </NavButton>
-      <NavButton
-        onClick={() =>
-          setVideos(
-            [...videoLinks]
-              .reverse()
-              .filter((video) => video.tags.includes(tags[2]))
-          )
-        }
-      >
-        Jogos Completos
+      <NavButton>
+        <Link onClick={() => setVideos(filterTakedArray(tags[2]))} to="/">
+          Jogos Completos
+        </Link>
       </NavButton>
       <NavButton>
         <Link to="/contato">Contato</Link>

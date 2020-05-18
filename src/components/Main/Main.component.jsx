@@ -9,7 +9,6 @@ import {
 } from "./Main.style";
 import Videos from "../Videos/Videos.component";
 import Pagination from "../Pagination/Pagination.component";
-// import videoLinks from "./videoLinksArray";
 
 const Main = ({ videos }) => {
   const [filteredVideos, setFilteredVideos] = useState(videos);
@@ -32,7 +31,6 @@ const Main = ({ videos }) => {
   // Get current videos
   const indexOfLastVideo = currentPage * videosPerPage;
   const indexOfFirstVideo = indexOfLastVideo - videosPerPage;
-  // const currentVideos = videos.slice(indexOfFirstVideo, indexOfLastVideo);
   const currentFilteredVideos = filteredVideos.slice(
     indexOfFirstVideo,
     indexOfLastVideo
