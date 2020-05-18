@@ -12,27 +12,11 @@ import Pagination from "../Pagination/Pagination.component";
 import videoLinks from "./videoLinksArray";
 
 const Main = () => {
-  // const [videos, setVideos] = useState([]);
   const [filteredVideos, setFilteredVideos] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [videosPerPage] = useState(16);
   const [search, setSearch] = useState("");
-
-  // useEffect(() => {
-  //   setLoading(true);
-  //   setVideos([...videoLinks].reverse());
-  //   setLoading(false);
-  // }, []);
-
-  // Filter videos
-  // const filteredVideos = currentVideos.filter((currentVideo) =>
-  //   currentVideo.title.toLowerCase().includes(search.toLowerCase())
-  // );
-
-  // const filteredVideos = videoLinks.filter((video) =>
-  //   video.title.toLowerCase().includes(search.toLowerCase())
-  // );
 
   useEffect(() => {
     setLoading(true);
@@ -69,25 +53,17 @@ const Main = () => {
         trajetória do Timão.
       </MainText>
       <AdUnitRectangle />
-      {/* <h1>Videos!</h1> */}
       <input
         type="text"
         placeholder="Busca"
         onChange={(e) => setSearch(e.target.value)}
       />
       <Content>
-        {/* <Videos videos={currentVideos} loading={loading} /> */}
-        <Videos
-          // videos={search === "" ? currentVideos : currentFilteredVideos}
-          videos={currentFilteredVideos}
-          loading={loading}
-        />
+        <Videos videos={currentFilteredVideos} loading={loading} />
         <AdUnitVertical />
       </Content>
       <Pagination
         videosPerPage={videosPerPage}
-        // totalVideos={videos.length}
-        // totalVideos={search === "" ? videos.length : filteredVideos.length}
         totalVideos={filteredVideos.length}
         paginate={paginate}
       />
