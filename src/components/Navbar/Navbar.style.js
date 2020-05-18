@@ -5,13 +5,15 @@ export const NavContainer = styled.div`
   font-size: 20px;
 `;
 
-export const HomeButton = styled.div`
+export const HomeButton = styled.button`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex: 1 auto;
   /*background: gray;*/
   background: #4e3272;
+  font-size: 1em;
+  border-color: transparent;
 
   a {
     display: flex;
@@ -20,7 +22,7 @@ export const HomeButton = styled.div`
 
     img {
       width: 50%;
-      margin-right: 10px;
+      /* margin-right: 10px; */
     }
 
     h2 {
@@ -29,7 +31,7 @@ export const HomeButton = styled.div`
   }
 `;
 
-export const NavButton = styled.div`
+export const NavButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,4 +39,6 @@ export const NavButton = styled.div`
   flex: 20%;
   /*background: gray;*/
   background: #4e3272;
+  border-color: transparent;
+  font-size: 1.1em;
 `;
