@@ -1,23 +1,23 @@
 const tags = ["campeonatos", "jogadores", "jogos completos"];
 
-const videolinks = [
+const videoLinks = [
   {
     id: 1,
-    title: "Este é o título para o primeiro vídeo lançado",
+    title: "Que vídeo antigo!",
     link: "https://www.youtube.com/embed/JVJHaefHPZ0",
     image: "https://img.youtube.com/vi/JVJHaefHPZ0/maxresdefault.jpg",
     tags: [tags[0], tags[2]],
   },
   {
     id: 2,
-    title: "Este é o título para todos",
+    title: "Este é o título para o segundo vídeo lançado",
     link: "https://www.youtube.com/embed/5ijgvM4XNW0",
     image: "https://img.youtube.com/vi/5ijgvM4XNW0/maxresdefault.jpg",
     tags: [tags[0], tags[2]],
   },
   {
     id: 3,
-    title: "Este é o título para todos",
+    title: "Ulrich",
     link: "https://www.youtube.com/embed/T09xdwPSqIQ",
     image: "https://img.youtube.com/vi/T09xdwPSqIQ/maxresdefault.jpg",
     tags: [tags[0], tags[2]],
@@ -59,7 +59,7 @@ const videolinks = [
   },
   {
     id: 9,
-    title: "Este é o título para todos",
+    title: "Ulrich",
     link: "https://google.com",
     image: "https://img.youtube.com/vi/ysz5S6PUM-U/maxresdefault.jpg",
     tags: [tags[0], tags[2]],
@@ -339,7 +339,7 @@ const videolinks = [
   },
   {
     id: 49,
-    title: "Este é o título para todos",
+    title: "Ulrich",
     link: "https://www.youtube.com/embed/tkmZcobVO0Y",
     image: "http://i3.ytimg.com/vi/tkmZcobVO0Y/maxresdefault.jpg",
     tags: [tags[2]],
@@ -353,4 +353,4 @@ const videolinks = [
   },
 ];
 
-export default videolinks;
+export default videoLinks;

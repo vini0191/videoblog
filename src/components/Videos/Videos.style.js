@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PostsCointainer = styled.div`
+export const VideosCointainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

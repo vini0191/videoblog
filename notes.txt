@@ -15,6 +15,9 @@ To do:
 10 - Login (social networks)
 11 - Hosting (Cloudflare, Firebase...)
 12 - Insert Ads
+13 - Responsividade
+14 - Integração p/ pagamentos
+15 - Tags
 
 ========================================
 Ajustes de conteudo:
@@ -34,20 +37,8 @@ Vitorias do Timao
 Corinthians Invicto
 
 
-
-APOIE
-Este site é uma homenagem ao Corinthians e mantido por torcedores. Sinta-se livre para nos apoiar, através de uma das opções abaixo:
-
 PicPay
 BuymeaCoffee
 Bitcoin
 Pagarme
 PagSeguro
-
-CONTATO
-Entre em contato através do formulário abaixo para tirar dúvidas, propor parcerias e sugerir novos vídeos e conteúdos
-
-NAVBAR
-Campeonatos
-Atletas
-Jogos Completos

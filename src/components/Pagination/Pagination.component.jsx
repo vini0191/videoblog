@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 import { PaginationContainer } from "./Pagination.style";
 
-const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
+const Pagination = ({ videosPerPage, totalVideos, paginate }) => {
   const pageNumbers = [];
 
-  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(totalVideos / videosPerPage); i++) {
     pageNumbers.push(i);
   }
 
