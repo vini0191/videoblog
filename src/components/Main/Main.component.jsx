@@ -9,10 +9,10 @@ import {
 } from "./Main.style";
 import Videos from "../Videos/Videos.component";
 import Pagination from "../Pagination/Pagination.component";
-import videoLinks from "./videoLinksArray";
+// import videoLinks from "./videoLinksArray";
 
-const Main = () => {
-  const [filteredVideos, setFilteredVideos] = useState([]);
+const Main = ({ videos }) => {
+  const [filteredVideos, setFilteredVideos] = useState(videos);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [videosPerPage] = useState(16);
@@ -21,15 +21,13 @@ const Main = () => {
   useEffect(() => {
     setLoading(true);
     setFilteredVideos(
-      [...videoLinks]
-        .reverse()
-        .filter((video) =>
-          video.title.toLowerCase().includes(search.toLowerCase())
-        )
+      [...videos].filter((video) =>
+        video.title.toLowerCase().includes(search.toLowerCase())
+      )
     );
     setLoading(false);
     setCurrentPage(1);
-  }, [search]);
+  }, [search, videos]);
 
   // Get current videos
   const indexOfLastVideo = currentPage * videosPerPage;
@@ -46,11 +44,13 @@ const Main = () => {
   return (
     <MainContainer>
       <MainText>
-        Bem vindo ao Memorial do Corinthians! Reunimos os vídeos mais
-        importantes da história do Corinthians, desde o Paulista de 77 até
-        momentos marcantes das conquistas da Libertadores e do Mundial.
-        Compartilhe com os amigos e celebre registros inesquecíveis nesta
-        trajetória do Timão.
+        <p>
+          Bem vindo ao Memorial do Corinthians! Reunimos os vídeos mais
+          importantes da história do Corinthians, desde o Paulista de 77 até
+          momentos marcantes das conquistas da Libertadores e do Mundial.
+          Compartilhe com os amigos e celebre registros inesquecíveis nesta
+          trajetória do Timão.
+        </p>
       </MainText>
       <AdUnitRectangle />
       <input
