@@ -14,7 +14,7 @@ export const VideosCointainer = styled.div`
     /* border: 1px solid red; */
 
     img {
-      width: 250px;
+      width: 300px;
     }
   }
 `;

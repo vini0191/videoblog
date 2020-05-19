@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { VideosCointainer } from "./Videos.style";
+import { VideoTitle } from "../Main/Main.style";
 
 const Videos = ({ videos, loading }) => {
   if (loading) return <h2>Carregando...</h2>;
@@ -11,7 +12,7 @@ const Videos = ({ videos, loading }) => {
       {videos.map(({ id, title, image }) => (
         <Link key={id} to={`/video/${id}`}>
           <img src={image} alt="" />
-          <p>{title}</p>
+          <VideoTitle>{title}</VideoTitle>
         </Link>
       ))}
     </VideosCointainer>

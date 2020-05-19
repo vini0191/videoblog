@@ -6,7 +6,8 @@ import {
   ContactForm,
   Donation,
 } from "./Contact.style";
-import img_form from "../../assets/images/img_form.jpg";
+// import img_form from "../../assets/images/img_form.jpg";
+import img_form from "../../assets/images/form2.jpg";
 
 // const ConText = () => (
 //   <ContactText>
