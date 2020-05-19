@@ -6,6 +6,7 @@ import {
   AdUnitVertical,
   AdUnitRectangle,
   MainText,
+  SearchBar,
 } from "./Main.style";
 import Videos from "../Videos/Videos.component";
 import Pagination from "../Pagination/Pagination.component";
@@ -53,7 +54,7 @@ const Main = () => {
         trajetória do Timão.
       </MainText>
       <AdUnitRectangle />
-      <input
+      <SearchBar
         type="text"
         placeholder="Busca"
         onChange={(e) => setSearch(e.target.value)}
