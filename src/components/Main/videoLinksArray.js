@@ -1,6 +1,6 @@
-const tags = ["campeonatos", "jogadores", "jogos completos"];
+export const tags = ["campeonatos", "jogadores", "jogos completos"];
 
-const videolinks = [
+export const videoLinks = [
   {
     id: 1,
     title: "Este é o título para o primeiro vídeo lançado",
@@ -352,5 +352,3 @@ const videolinks = [
     tags: [tags[2]],
   },
 ];
-
-export default videolinks;
