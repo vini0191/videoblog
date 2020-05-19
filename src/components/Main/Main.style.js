@@ -41,6 +41,7 @@ export const SearchBar = styled.input`
   margin: 10px auto;
   width: 25%;
   background: #4e3272;
+  outline: none;
   border: none;
   border-radius: 3px;
   ::placeholder {
@@ -48,7 +49,6 @@ export const SearchBar = styled.input`
   }
   &:hover {
     background: #543b75;
-    cursor: pointer;
     transition: background 0.5s;
   }
   @media screen and (max-width: 768px) {
