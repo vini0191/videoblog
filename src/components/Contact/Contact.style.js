@@ -7,10 +7,10 @@ export const ContactContainer = styled.div`
   align-items: center;
 
   img {
-    width: 350px;
-    height: 600px;
+    ${"" /* width: 350px; */}
+    ${"" /* height: 600px; */}
     /* margin-top: 20px; */
-    margin: 0;
+    ${"" /* margin: 0; */}
   }
 
   form {
@@ -21,10 +21,10 @@ export const ContactContainer = styled.div`
     /* width: 70%; */
     /* flex: 70%; */
     /* max-width: 450px; */
-    width: 350px;
+    width: 450px;
     height: 600px;
     justify-content: flex-end;
-    background: #272c35;
+    background: #4e3272;
 
     h1 {
       margin: 10px 20px;
@@ -35,15 +35,21 @@ export const ContactContainer = styled.div`
       margin: 10px 20px;
       padding: 15px 10px;
       line-height: 28px;
-      background: #aab2c0;
+      background: white;
+      border: none;
+      border-radius: 3px;
+      ::placeholder {
+        color: gray;
+      }
     }
 
     input[type="submit"] {
-      width: 70px;
+      width: 100px;
       align-self: flex-end;
       padding: 5px;
-      line-height: 18px;
-      border-radius: 10px;
+      line-height: 24px;
+      border-radius: 3px;
+      font-size: 16px;
     }
   }
 
@@ -54,13 +60,15 @@ export const ContactContainer = styled.div`
 
     img,
     form {
+      width: 100%;
     }
   }
 `;
 
-export const ContactText = styled.h2`
-  margin: 50px 50px;
+export const ContactText = styled.div`
   font-size: 24px;
+  width: 70%;
+  margin: 50px auto;
 `;
 
 export const ContactForm = styled.div`
@@ -68,5 +76,8 @@ export const ContactForm = styled.div`
   flex-direction: row;
 `;
 
-export const Donation = styled.h2``;
-// 784 x 590
+export const Donation = styled.div`
+  font-size: 24px;
+  width: 70%;
+  margin: 50px auto;
+`;

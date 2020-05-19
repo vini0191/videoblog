@@ -33,3 +33,31 @@ export const MainText = styled.div`
   margin: 50px 50px;
   font-size: 24px;
 `;
+
+export const SearchBar = styled.input`
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  margin: 10px auto;
+  width: 25%;
+  background: #4e3272;
+  border: none;
+  border-radius: 3px;
+  ::placeholder {
+    color: #ddd9e2;
+  }
+  &:hover {
+    background: #543b75;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
+  @media screen and (max-width: 768px) {
+    width: 70%;
+  }
+`;
+
+export const VideoTitle = styled.p`
+  width: 300px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+`;
