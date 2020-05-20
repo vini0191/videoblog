@@ -10,25 +10,22 @@ import {
   NavButton,
 } from "./Navbar.style";
 import { FaAlignRight } from "react-icons/fa";
-import logo from "../../assets/images/tlogo.jpg";
+import navBanner from "../../assets/images/navbanner2.jpg";
 
 const Navbar = ({ setVideos }) => {
   const [toggle, setToggle] = useState(false);
   const filterTakedArray = (tag) =>
     [...videoLinks].reverse().filter((video) => video.tags.includes(tag));
-  // const heightConfig = { `height: ${toggle ? "120px" : 0}` };
 
   return (
-    <NavContainer className="navBar">
-      <MobButton onClick={() => setToggle(!toggle)}>
-        <FaAlignRight />
-      </MobButton>
-      {/* <Ul className={toggle ? "links show-nav" : "links"}> */}
+    <NavContainer>
       <HomeButton>
         <Link onClick={() => setVideos([...videoLinks].reverse())} to="/">
-          <img src={logo} alt="Logo" />
-          <h2>Memorial Corinthians</h2>
+          <img src={navBanner} alt="Logo" />
         </Link>
+        <MobButton onClick={() => setToggle(!toggle)}>
+          <FaAlignRight />
+        </MobButton>
       </HomeButton>
       <Ul toggle={toggle}>
         <NavButton>
