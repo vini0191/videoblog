@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { VideosCointainer } from "./Videos.style";
-import { VideoTitle } from "../Main/Main.style";
+import { VideosCointainer, VideoTitle } from "./Videos.style";
 
 const Videos = ({ videos, loading }) => {
   if (loading) return <h2>Carregando...</h2>;

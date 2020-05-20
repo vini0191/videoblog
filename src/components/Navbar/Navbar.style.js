@@ -14,6 +14,7 @@ export const MobButton = styled.button`
   border: none;
   cursor: pointer;
   outline: none;
+  /* width: 100%; */
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -28,13 +29,14 @@ export const HomeButton = styled.div`
   font-size: 1em;
   margin: 0;
   padding: 0;
+  width: 100vw;
 
   a {
     display: flex;
     ${"" /* width: 100%; */}
 
     img {
-      width: 100vw;
+      width: 100%;
     }
   }
 
