@@ -10,6 +10,12 @@ export const Content = styled.div`
   flex-direction: row;
 `;
 
+export const MainText = styled.p`
+  margin: 50px 50px;
+  font-size: 22px;
+  text-align: justify;
+`;
+
 export const AdUnitVertical = styled.div`
   background: orange;
   border: 2px solid white;
@@ -18,6 +24,7 @@ export const AdUnitVertical = styled.div`
   margin: 0 30px;
   /* Check the size of each flex item: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
   flex: 1 0 auto;
+  display: none;
 `;
 
 export const AdUnitRectangle = styled.div`
@@ -27,11 +34,7 @@ export const AdUnitRectangle = styled.div`
   height: 90px;
   align-self: center;
   margin: 20px 0;
-`;
-
-export const MainText = styled.div`
-  margin: 50px 50px;
-  font-size: 24px;
+  display: none;
 `;
 
 export const SearchBar = styled.input`

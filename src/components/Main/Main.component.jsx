@@ -43,13 +43,11 @@ const Main = ({ videos }) => {
   return (
     <MainContainer>
       <MainText>
-        <p>
-          Bem vindo ao Memorial do Corinthians! Reunimos os vídeos mais
-          importantes da história do Corinthians, desde o Paulista de 77 até
-          momentos marcantes das conquistas da Libertadores e do Mundial.
-          Compartilhe com os amigos e celebre registros inesquecíveis nesta
-          trajetória do Timão.
-        </p>
+        Bem vindo ao Memorial do Corinthians! Reunimos os vídeos mais
+        importantes da história do Corinthians, desde o Paulista de 77 até
+        momentos marcantes das conquistas da Libertadores e do Mundial.
+        Compartilhe com os amigos e celebre registros inesquecíveis nesta
+        trajetória do Timão.
       </MainText>
       <AdUnitRectangle />
       <SearchBar
