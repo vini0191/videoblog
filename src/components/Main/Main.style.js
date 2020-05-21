@@ -45,24 +45,40 @@ export const AdUnitRectangle = styled.div`
   }
 `;
 
-export const SearchBar = styled.input`
-  font-size: 18px;
-  color: white;
-  padding: 10px;
+export const Search = styled.div`
   margin: 10px auto;
-  width: 25%;
+  padding: 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 70vw;
+
+  @media screen and (min-width: 768px) {
+    width: 100vw;
+  }
+`;
+
+export const SearchBar = styled.input`
+  font-size: 1em;
+  color: white;
+  margin: 10px auto;
+  padding: 1rem 1rem 1rem 3.5rem;
+  width: 70vw;
   background: #4e3272;
-  outline: none;
   border: none;
   border-radius: 3px;
+  outline: none;
+
   ::placeholder {
     color: #ddd9e2;
   }
+
   &:hover {
     background: #543b75;
     transition: background 0.5s;
   }
-  @media screen and (max-width: 768px) {
-    width: 70%;
+
+  @media screen and (min-width: 768px) {
+    width: 100vw;
   }
 `;
