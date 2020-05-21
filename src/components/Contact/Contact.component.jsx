@@ -23,7 +23,7 @@ const Contact = () => (
       >
         <h1>Contato</h1>
         <input name="name" type="text" id="name" placeholder="Nome" />
-        <input name="email" type="email" id="email" placeholder="email" />
+        <input name="email" type="email" id="email" placeholder="Email" />
         <textarea
           name="comment"
           id="comment"

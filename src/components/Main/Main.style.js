@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    /* flex-direction: row; */
+  }
 `;
 
 export const Content = styled.div`
@@ -14,6 +18,10 @@ export const MainText = styled.p`
   margin: 50px 25px;
   font-size: 22px;
   text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    margin: 50px 40px;
+  }
 `;
 
 export const AdUnitVertical = styled.div`
@@ -54,7 +62,7 @@ export const Search = styled.div`
   width: 70vw;
 
   @media screen and (min-width: 768px) {
-    width: 100vw;
+    width: 50vw;
   }
 `;
 
@@ -79,6 +87,6 @@ export const SearchBar = styled.input`
   }
 
   @media screen and (min-width: 768px) {
-    width: 100vw;
+    width: 50vw;
   }
 `;

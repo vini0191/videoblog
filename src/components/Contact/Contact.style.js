@@ -6,30 +6,19 @@ export const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  img {
-    ${"" /* width: 350px; */}
-    ${"" /* height: 600px; */}
-    /* margin-top: 20px; */
-    ${"" /* margin: 0; */}
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
   }
-
-  /* @media only screen and (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0;
-
-    img,
-    form {
-      width: 100%;
-    }
-  } */
 `;
 
 export const ContactText = styled.div`
   margin: 50px 25px;
-  /* font-size: 22px; */
   font-size: 1.3em;
   text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    margin: 50px 35px;
+  }
 `;
 
 export const ContactForm = styled.div`
@@ -38,6 +27,15 @@ export const ContactForm = styled.div`
 
   img {
     display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 35%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 40%;
+    }
   }
 
   form {
@@ -45,8 +43,6 @@ export const ContactForm = styled.div`
     width: 300px;
     margin: 0;
     flex-direction: column;
-    /* width: 450px;
-    height: 600px; */
     justify-content: flex-end;
     background: #4e3272;
 
@@ -59,7 +55,6 @@ export const ContactForm = styled.div`
     textarea {
       margin: 10px 20px;
       padding: 2px 5px;
-      /* line-height: 28px; */
       background: white;
       border: none;
       border-radius: 1px;
@@ -74,14 +69,44 @@ export const ContactForm = styled.div`
     }
 
     input[type="submit"] {
-      /* width: 100px; */
-      /* align-self: flex-end; */
       align-self: center;
       padding: 8px 20px;
-      /* line-height: 24px; */
       border-radius: 3px;
       font-size: 0.5em;
     }
+
+    @media screen and (min-width: 768px) {
+      h1 {
+        margin-bottom: 30px;
+      }
+
+      textarea {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      h1 {
+        margin-top: 10px;
+        margin-bottom: 65px;
+      }
+
+      textarea {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      input[type="submit"] {
+        margin-bottom: 30px;
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
   }
 `;
 
@@ -89,4 +114,8 @@ export const Donation = styled.div`
   margin: 50px 25px;
   font-size: 22px;
   text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    margin: 50px 35px;
+  }
 `;

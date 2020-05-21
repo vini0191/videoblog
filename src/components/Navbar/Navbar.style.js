@@ -71,7 +71,7 @@ export const NavButton = styled.li`
   border-bottom: 1px solid gray;
 
   @media screen and (min-width: 768px) {
-    padding: 0 20px;
+    padding: 15px 20px;
     border: none;
     display: block;
   }
