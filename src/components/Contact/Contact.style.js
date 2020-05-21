@@ -6,78 +6,116 @@ export const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
+`;
+
+export const ContactText = styled.div`
+  margin: 50px 25px;
+  font-size: 1.3em;
+  text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    margin: 50px 35px;
+  }
+`;
+
+export const ContactForm = styled.div`
+  display: flex;
+  flex-direction: column;
+
   img {
-    ${"" /* width: 350px; */}
-    ${"" /* height: 600px; */}
-    /* margin-top: 20px; */
-    ${"" /* margin: 0; */}
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 35%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 40%;
+    }
   }
 
   form {
     display: flex;
-    /* margin: 20px 0; */
+    width: 300px;
     margin: 0;
     flex-direction: column;
-    /* width: 70%; */
-    /* flex: 70%; */
-    /* max-width: 450px; */
-    width: 450px;
-    height: 600px;
     justify-content: flex-end;
     background: #4e3272;
 
     h1 {
-      margin: 10px 20px;
+      font-size: 1.3em;
+      margin: 5px 20px;
     }
 
     input,
     textarea {
       margin: 10px 20px;
-      padding: 15px 10px;
-      line-height: 28px;
+      padding: 2px 5px;
       background: white;
       border: none;
-      border-radius: 3px;
+      border-radius: 1px;
       ::placeholder {
         color: gray;
       }
     }
 
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+
     input[type="submit"] {
-      width: 100px;
-      align-self: flex-end;
-      padding: 5px;
-      line-height: 24px;
+      align-self: center;
+      padding: 8px 20px;
       border-radius: 3px;
-      font-size: 16px;
+      font-size: 0.5em;
+    }
+
+    @media screen and (min-width: 768px) {
+      h1 {
+        margin-bottom: 30px;
+      }
+
+      textarea {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      h1 {
+        margin-top: 10px;
+        margin-bottom: 65px;
+      }
+
+      textarea {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      input[type="submit"] {
+        margin-bottom: 30px;
+        font-size: 0.8em;
+      }
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0;
-
-    img,
-    form {
-      width: 100%;
-    }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
   }
-`;
-
-export const ContactText = styled.div`
-  font-size: 24px;
-  width: 70%;
-  margin: 50px auto;
-`;
-
-export const ContactForm = styled.div`
-  display: flex;
-  flex-direction: row;
 `;
 
 export const Donation = styled.div`
-  font-size: 24px;
-  width: 70%;
-  margin: 50px auto;
+  margin: 50px 25px;
+  font-size: 22px;
+  text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    margin: 50px 35px;
+  }
 `;

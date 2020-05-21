@@ -6,10 +6,12 @@ import {
   AdUnitVertical,
   AdUnitRectangle,
   MainText,
+  Search,
   SearchBar,
 } from "./Main.style";
 import Videos from "../Videos/Videos.component";
 import Pagination from "../Pagination/Pagination.component";
+import { GoSearch } from "react-icons/go";
 
 const Main = ({ videos }) => {
   const [filteredVideos, setFilteredVideos] = useState(videos);
@@ -43,20 +45,28 @@ const Main = ({ videos }) => {
   return (
     <MainContainer>
       <MainText>
-        <p>
-          Bem vindo ao Memorial do Corinthians! Reunimos os vídeos mais
-          importantes da história do Corinthians, desde o Paulista de 77 até
-          momentos marcantes das conquistas da Libertadores e do Mundial.
-          Compartilhe com os amigos e celebre registros inesquecíveis nesta
-          trajetória do Timão.
-        </p>
+        Bem vindo ao Memorial do Corinthians! Reunimos os vídeos mais
+        importantes da história do Corinthians, desde o Paulista de 77 até
+        momentos marcantes das conquistas da Libertadores e do Mundial.
+        Compartilhe com os amigos e celebre registros inesquecíveis nesta
+        trajetória do Timão.
       </MainText>
       <AdUnitRectangle />
-      <SearchBar
-        type="text"
-        placeholder="Busca"
-        onChange={(e) => setSearch(e.target.value)}
-      />
+      <Search>
+        <GoSearch
+          style={{
+            marginLeft: "1rem",
+            position: "absolute",
+            color: "white",
+          }}
+          size="1.5em"
+        />
+        <SearchBar
+          type="text"
+          placeholder="Busca"
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </Search>
       <Content>
         <Videos videos={currentFilteredVideos} loading={loading} />
         <AdUnitVertical />

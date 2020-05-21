@@ -6,15 +6,7 @@ import {
   ContactForm,
   Donation,
 } from "./Contact.style";
-// import img_form from "../../assets/images/img_form.jpg";
 import img_form from "../../assets/images/form2.jpg";
-
-// const ConText = () => (
-//   <ContactText>
-//     Entre em contato através do formulário abaixo para tirar dúvidas, propor
-//     parcerias e sugerir novos vídeos e conteúdos
-//   </ContactText>
-// );
 
 const Contact = () => (
   <ContactContainer>
@@ -31,13 +23,12 @@ const Contact = () => (
       >
         <h1>Contato</h1>
         <input name="name" type="text" id="name" placeholder="Nome" />
-        <input name="email" type="email" id="email" placeholder="email" />
+        <input name="email" type="email" id="email" placeholder="Email" />
         <textarea
           name="comment"
           id="comment"
           rows="10"
-          placeholder="Digite um texto maravilhoso aqui"
-          style={{ resize: "none" }}
+          placeholder="Escreva sua mensagem"
         />
 
         <input name="_formsubmit_id" type="text" style={{ display: "none" }} />
