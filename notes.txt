@@ -22,6 +22,8 @@ To do:
 15 - Texto de descrição do vídeo
 16 - Domínio
 17 - Criar email para encaminhamento das mensagens do formulário
+18 - Favicon
+19 - Metatags (descrição da página em compartilhamentos)
 
 ========================================
 Ajustes de conteudo:
