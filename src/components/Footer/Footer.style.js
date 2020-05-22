@@ -2,12 +2,38 @@ import styled from "styled-components";
 
 export const FootContainer = styled.div`
   display: flex;
-  /* justify-content: center; */
+  flex-direction: column;
+  background: #4e3272;
+  height: 12vh;
+  text-align: center;
+  a {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 5vh;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+      font-size: 18px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    flex-direction: row;
+    height: 5vh;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+      font-size: 18px;
+    }
+  }
 `;
 
-export const FootButton = styled.div`
-  text-align: center;
-  background: gray;
-  flex: 33.33%;
-  border: 1px solid yellow;
+export const FootButton = styled.button`
+  color: white;
+  background: none;
+  border: none;
+  margin: 10px auto;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 `;
