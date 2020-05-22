@@ -5,8 +5,12 @@ import {
   ContactText,
   ContactForm,
   Donation,
+  Paypal,
+  MercadoPago,
+  DonationOptions,
 } from "./Contact.style";
 import img_form from "../../assets/images/form2.jpg";
+import logo_mercadopago from "../../assets/images/logo_mercadopago.png";
 
 const Contact = () => (
   <ContactContainer>
@@ -37,8 +41,48 @@ const Contact = () => (
       </form>
     </ContactForm>
     <Donation>
-      APOIE Este site é uma homenagem ao Corinthians e mantido por torcedores.
-      Sinta-se livre para nos apoiar, através de uma das opções abaixo:
+      <p>
+        APOIE Este site é uma homenagem ao Corinthians e mantido por torcedores.
+        Sinta-se livre para nos apoiar, através de uma das opções abaixo:
+      </p>
+      <DonationOptions>
+        <Paypal>
+          <form
+            action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"
+            // target="_top"
+            target="_blank"
+          >
+            <input type="hidden" name="cmd" value="_donations" />
+            <input type="hidden" name="business" value="SAY3Q9XJW9EJA" />
+            <input type="hidden" name="currency_code" value="BRL" />
+            <input
+              type="image"
+              src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif"
+              border="0"
+              name="submit"
+              title="PayPal - The safer, easier way to pay online!"
+              alt="Faça doações com o botão do PayPal"
+            />
+            <img
+              alt=""
+              border="0"
+              src="https://www.paypal.com/pt_BR/i/scr/pixel.gif"
+              width="1"
+              height="1"
+            />
+          </form>
+        </Paypal>
+        <MercadoPago>
+          <a
+            href="https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=94889478-12fe4181-b6b4-4180-a94b-a4a01b26615a"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img srcSet={logo_mercadopago} alt="" />
+          </a>
+        </MercadoPago>
+      </DonationOptions>
     </Donation>
   </ContactContainer>
 );
