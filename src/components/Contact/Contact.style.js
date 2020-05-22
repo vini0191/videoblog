@@ -114,8 +114,44 @@ export const Donation = styled.div`
   margin: 50px 25px;
   font-size: 22px;
   text-align: justify;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: 768px) {
     margin: 50px 35px;
+  }
+`;
+
+export const DonationOptions = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (min-width: 1024px) {
+    justify-content: center;
+  }
+`;
+
+export const Paypal = styled.div`
+  @media screen and (min-width: 1024px) {
+    margin: 0 30px;
+  }
+`;
+
+export const MercadoPago = styled.div`
+  img {
+    width: 150px;
+    background: white;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 0 30px;
   }
 `;
