@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import "./App.css";
-// import thumbnail from "../public/thumbnail.jpg";
-// import index from "../public/index.html";
+import thumbnail from "./assets/images/thumbnail.jpg";
 import Navbar from "./components/Navbar/Navbar.component";
 import Footer from "./components/Footer/Footer.component";
 import Main from "./components/Main/Main.component";
@@ -18,10 +17,9 @@ const App = () => {
 
   return (
     <div id="container">
-      {/* <Helmet>
+      <Helmet>
         <meta property="og:image" content={thumbnail} />
-        <meta property="og:url" content={index} />
-      </Helmet> */}
+      </Helmet>
       <Navbar setVideos={setVideos} />
       <div id="main-content">
         <Switch>
