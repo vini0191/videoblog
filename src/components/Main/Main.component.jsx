@@ -53,6 +53,7 @@ const Main = ({ videos }) => {
       </MainText>
       <AdUnitRectangle>
         <iframe
+          title="banner"
           src="//www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
           width="320"
           height="50"
