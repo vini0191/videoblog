@@ -51,7 +51,16 @@ const Main = ({ videos }) => {
         Compartilhe com os amigos e celebre registros inesquecíveis nesta
         trajetória do Timão.
       </MainText>
-      <AdUnitRectangle />
+      <AdUnitRectangle>
+        <iframe
+          src="//www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
+          width="320"
+          height="50"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </AdUnitRectangle>
+
       <Search>
         <GoSearch
           style={{
