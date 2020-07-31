@@ -51,9 +51,60 @@ const Main = ({ videos }) => {
         Compartilhe com os amigos e celebre registros inesquecíveis nesta
         trajetória do Timão.
       </MainText>
+
       <AdUnitRectangle>
         <iframe
-          title="banner"
+          title="desktop_banner"
+          src="//www.topdisplaynetwork.com/watchnew?key=fb88a499e07584b47564179548308523"
+          width="728"
+          height="90"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </AdUnitRectangle>
+      <AdUnitRectangle>
+        <iframe
+          title="vertical_banner_A"
+          src="//www.topdisplaynetwork.com/watchnew?key=125b9aafbde90afa709434287e9a3ee1"
+          width="160"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </AdUnitRectangle>
+      <AdUnitRectangle>
+        <iframe
+          title="vertical_banner_B"
+          src="//www.topdisplaynetwork.com/watchnew?key=5d033916f47f7f57d41ff09c119d80e4"
+          width="160"
+          height="300"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </AdUnitRectangle>
+      <AdUnitRectangle>
+        <iframe
+          title="midsize_banner"
+          src="//www.topdisplaynetwork.com/watchnew?key=3027bf75916c21f7921c251ff0ac2898"
+          width="468"
+          height="60"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </AdUnitRectangle>
+      <AdUnitRectangle>
+        <iframe
+          title="video_ad"
+          src="https://www.videosprofit.com/watch.xml?key=9f9d9d71fbc7b1b40622249b2c1df72d"
+          width="320"
+          height="50"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </AdUnitRectangle>
+      <AdUnitRectangle>
+        <iframe
+          title="mobile_banner"
           src="//www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
           width="320"
           height="50"
