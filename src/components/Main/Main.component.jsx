@@ -145,6 +145,17 @@ const Main = ({ videos }) => {
           scrolling="no"
         ></iframe>
       </AdTablet>
+
+      <AdMobile>
+        <iframe
+          title="mobile_banner"
+          src="//www.topdisplaynetwork.com/watchnew?key=4d00edeb5e29120a67095839cfb12c33"
+          width="300"
+          height="250"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </AdMobile>
     </MainContainer>
   );
 };
