@@ -9,22 +9,6 @@ export const VideoUnit = styled.div`
   } */
 `;
 
-export const AdUnitRectangle = styled.div`
-  background: orange;
-  border: 2px solid white;
-  width: 320px;
-  height: 100px;
-  align-self: center;
-  margin: 20px auto;
-
-  @media screen and (min-width: 768px) {
-    width: 728px;
-    height: 90px;
-    align-self: center;
-    margin: 20px 0;
-  }
-`;
-
 export const VideoUnitTitle = styled.h1`
   font-size: 1em;
   width: 100%;
@@ -50,5 +34,38 @@ export const VideoContainer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
+  }
+`;
+
+// Ads below
+export const AdVerticalA = styled.div`
+  background: orange;
+  border: 2px solid white;
+  width: 320px;
+  height: 100px;
+  align-self: center;
+  margin: 20px auto;
+
+  @media screen and (min-width: 768px) {
+    width: 728px;
+    height: 90px;
+    align-self: center;
+    margin: 20px 0;
+  }
+`;
+
+export const AdVerticalB = styled.div`
+  background: orange;
+  border: 2px solid white;
+  width: 320px;
+  height: 100px;
+  align-self: center;
+  margin: 20px auto;
+
+  @media screen and (min-width: 768px) {
+    width: 728px;
+    height: 90px;
+    align-self: center;
+    margin: 20px 0;
   }
 `;

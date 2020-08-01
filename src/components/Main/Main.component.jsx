@@ -3,8 +3,9 @@ import React, { useState, useEffect } from "react";
 import {
   MainContainer,
   Content,
-  AdUnitVertical,
-  AdUnitRectangle,
+  AdTablet,
+  // AdUnitRectangle,
+  AdMobile,
   MainText,
   Search,
   SearchBar,
@@ -52,36 +53,7 @@ const Main = ({ videos }) => {
         trajetória do Timão.
       </MainText>
 
-      <AdUnitRectangle>
-        <iframe
-          title="desktop_banner"
-          src="//www.topdisplaynetwork.com/watchnew?key=fb88a499e07584b47564179548308523"
-          width="728"
-          height="90"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </AdUnitRectangle>
-      <AdUnitRectangle>
-        <iframe
-          title="vertical_banner_A"
-          src="//www.topdisplaynetwork.com/watchnew?key=125b9aafbde90afa709434287e9a3ee1"
-          width="160"
-          height="600"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </AdUnitRectangle>
-      <AdUnitRectangle>
-        <iframe
-          title="vertical_banner_B"
-          src="//www.topdisplaynetwork.com/watchnew?key=5d033916f47f7f57d41ff09c119d80e4"
-          width="160"
-          height="300"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </AdUnitRectangle>
+      {/*
       <AdUnitRectangle>
         <iframe
           title="midsize_banner"
@@ -92,17 +64,8 @@ const Main = ({ videos }) => {
           scrolling="no"
         ></iframe>
       </AdUnitRectangle>
-      <AdUnitRectangle>
-        <iframe
-          title="video_ad"
-          src="https://www.videosprofit.com/watch.xml?key=9f9d9d71fbc7b1b40622249b2c1df72d"
-          width="320"
-          height="50"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </AdUnitRectangle>
-      <AdUnitRectangle>
+ */}
+      <AdMobile>
         <iframe
           title="mobile_banner"
           src="//www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
@@ -111,7 +74,18 @@ const Main = ({ videos }) => {
           frameborder="0"
           scrolling="no"
         ></iframe>
-      </AdUnitRectangle>
+      </AdMobile>
+
+      <AdTablet>
+        <iframe
+          title="desktop_banner"
+          src="//www.topdisplaynetwork.com/watchnew?key=fb88a499e07584b47564179548308523"
+          width="728"
+          height="90"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </AdTablet>
 
       <Search>
         <GoSearch
@@ -130,14 +104,47 @@ const Main = ({ videos }) => {
       </Search>
       <Content>
         <Videos videos={currentFilteredVideos} loading={loading} />
-        <AdUnitVertical />
+        <AdTablet />
       </Content>
+
+      <AdMobile>
+        <iframe
+          title="mobile_banner"
+          src="//www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
+          width="320"
+          height="50"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </AdMobile>
+
       <Pagination
         videosPerPage={videosPerPage}
         totalVideos={filteredVideos.length}
         paginate={paginate}
       />
-      <AdUnitRectangle />
+
+      <AdMobile>
+        <iframe
+          title="mobile_banner"
+          src="//www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
+          width="320"
+          height="50"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </AdMobile>
+
+      <AdTablet>
+        <iframe
+          title="desktop_banner"
+          src="//www.topdisplaynetwork.com/watchnew?key=fb88a499e07584b47564179548308523"
+          width="728"
+          height="90"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </AdTablet>
     </MainContainer>
   );
 };

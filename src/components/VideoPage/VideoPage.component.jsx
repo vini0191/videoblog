@@ -2,7 +2,8 @@ import React from "react";
 
 import {
   VideoUnit,
-  AdUnitRectangle,
+  AdVerticalA,
+  AdVerticalB,
   VideoUnitTitle,
   VideoContainer,
 } from "./VideoPage.style";
@@ -16,7 +17,6 @@ const VideoPage = ({ match }) => {
 
   return (
     <VideoUnit>
-      <AdUnitRectangle />
       <VideoUnitTitle>{title}</VideoUnitTitle>
       <VideoContainer>
         <iframe
@@ -26,6 +26,26 @@ const VideoPage = ({ match }) => {
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
+        <AdVerticalA>
+          <iframe
+            title="vertical_banner_B"
+            src="//www.topdisplaynetwork.com/watchnew?key=5d033916f47f7f57d41ff09c119d80e4"
+            width="160"
+            height="300"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </AdVerticalA>
+        <AdVerticalB>
+          <iframe
+            title="vertical_banner_A"
+            src="//www.topdisplaynetwork.com/watchnew?key=125b9aafbde90afa709434287e9a3ee1"
+            width="160"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </AdVerticalB>
       </VideoContainer>
     </VideoUnit>
   );
