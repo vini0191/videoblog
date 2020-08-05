@@ -53,18 +53,6 @@ const Main = ({ videos }) => {
         trajetória do Timão.
       </MainText>
 
-      {/*
-      <AdUnitRectangle>
-        <iframe
-          title="midsize_banner"
-          src="//www.topdisplaynetwork.com/watchnew?key=3027bf75916c21f7921c251ff0ac2898"
-          width="468"
-          height="60"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </AdUnitRectangle>
- */}
       <AdMobile>
         <iframe
           title="mobile_banner"
@@ -146,7 +134,7 @@ const Main = ({ videos }) => {
         ></iframe>
       </AdTablet>
 
-      <AdMobile>
+      <AdTablet>
         <iframe
           title="mobile_banner"
           src="//www.topdisplaynetwork.com/watchnew?key=4d00edeb5e29120a67095839cfb12c33"
@@ -155,7 +143,7 @@ const Main = ({ videos }) => {
           frameborder="0"
           scrolling="no"
         ></iframe>
-      </AdMobile>
+      </AdTablet>
     </MainContainer>
   );
 };
