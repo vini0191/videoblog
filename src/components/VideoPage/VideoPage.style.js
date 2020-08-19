@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const VideoUnit = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ export const VideoContainer = styled.div`
   ::after {
     padding-top: 56.25%;
     display: block;
-    content: "";
+    content: '';
   }
 
   iframe {
@@ -38,34 +38,31 @@ export const VideoContainer = styled.div`
 `;
 
 // Ads below
-export const AdVerticalA = styled.div`
-  background: orange;
-  border: 2px solid white;
-  width: 320px;
-  height: 100px;
+export const AdMobile = styled.div`
   align-self: center;
-  margin: 20px auto;
+  margin-top: 20px;
 
   @media screen and (min-width: 768px) {
-    width: 728px;
-    height: 90px;
-    align-self: center;
-    margin: 20px 0;
+    display: none;
   }
 `;
 
-export const AdVerticalB = styled.div`
-  background: orange;
-  border: 2px solid white;
-  width: 320px;
-  height: 100px;
-  align-self: center;
-  margin: 20px auto;
+export const AdDesktop = styled.div`
+  display: none;
 
   @media screen and (min-width: 768px) {
-    width: 728px;
-    height: 90px;
-    align-self: center;
-    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+  }
+`;
+
+export const AdLargeDesktop = styled.div`
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 20px auto; */
   }
 `;

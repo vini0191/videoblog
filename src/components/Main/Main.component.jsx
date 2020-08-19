@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 import {
   MainContainer,
   Content,
-  AdTablet,
+  AdDesktop,
   // AdUnitRectangle,
   AdMobile,
   MainText,
   Search,
   SearchBar,
-} from "./Main.style";
-import Videos from "../Videos/Videos.component";
-import Pagination from "../Pagination/Pagination.component";
-import { GoSearch } from "react-icons/go";
+} from './Main.style';
+import Videos from '../Videos/Videos.component';
+import Pagination from '../Pagination/Pagination.component';
+import { GoSearch } from 'react-icons/go';
 
 const Main = ({ videos }) => {
   const [filteredVideos, setFilteredVideos] = useState(videos);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [videosPerPage] = useState(16);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
     setLoading(true);
@@ -56,31 +56,33 @@ const Main = ({ videos }) => {
       <AdMobile>
         <iframe
           title="mobile_banner"
-          src="//www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
+          src="https://www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
           width="320"
           height="50"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
+          samesite="None"
         ></iframe>
       </AdMobile>
 
-      <AdTablet>
+      <AdDesktop>
         <iframe
           title="desktop_banner"
-          src="//www.topdisplaynetwork.com/watchnew?key=fb88a499e07584b47564179548308523"
+          src="https://www.topdisplaynetwork.com/watchnew?key=fb88a499e07584b47564179548308523"
           width="728"
           height="90"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
+          samesite="None"
         ></iframe>
-      </AdTablet>
+      </AdDesktop>
 
       <Search>
         <GoSearch
           style={{
-            marginLeft: "1rem",
-            position: "absolute",
-            color: "white",
+            marginLeft: '1rem',
+            position: 'absolute',
+            color: 'white',
           }}
           size="1.5em"
         />
@@ -92,19 +94,7 @@ const Main = ({ videos }) => {
       </Search>
       <Content>
         <Videos videos={currentFilteredVideos} loading={loading} />
-        <AdTablet />
       </Content>
-
-      <AdMobile>
-        <iframe
-          title="mobile_banner"
-          src="//www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
-          width="320"
-          height="50"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </AdMobile>
 
       <Pagination
         videosPerPage={videosPerPage}
@@ -115,35 +105,59 @@ const Main = ({ videos }) => {
       <AdMobile>
         <iframe
           title="mobile_banner"
-          src="//www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
-          width="320"
-          height="50"
-          frameborder="0"
+          src="https://www.topdisplaynetwork.com/watchnew?key=4d00edeb5e29120a67095839cfb12c33"
+          width="300"
+          height="250"
+          frameBorder="0"
           scrolling="no"
+          samesite="None"
         ></iframe>
       </AdMobile>
 
-      <AdTablet>
-        <iframe
-          title="desktop_banner"
-          src="//www.topdisplaynetwork.com/watchnew?key=fb88a499e07584b47564179548308523"
-          width="728"
-          height="90"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
-      </AdTablet>
-
-      <AdTablet>
+      <AdMobile>
         <iframe
           title="mobile_banner"
-          src="//www.topdisplaynetwork.com/watchnew?key=4d00edeb5e29120a67095839cfb12c33"
+          src="https://www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
+          width="320"
+          height="50"
+          frameBorder="0"
+          scrolling="no"
+          samesite="None"
+        ></iframe>
+      </AdMobile>
+
+      <AdMobile>
+        <iframe
+          title="mobile_banner"
+          src="https://www.topdisplaynetwork.com/watchnew?key=bd18cd9f3b2bfaa7001886c11bbf51ef"
+          width="320"
+          height="50"
+          frameBorder="0"
+          scrolling="no"
+          samesite="None"
+        ></iframe>
+      </AdMobile>
+
+      <AdDesktop>
+        <iframe
+          title="mobile_banner"
+          src="https://www.topdisplaynetwork.com/watchnew?key=4d00edeb5e29120a67095839cfb12c33"
           width="300"
           height="250"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
+          samesite="None"
         ></iframe>
-      </AdTablet>
+        <iframe
+          title="mobile_banner"
+          src="https://www.topdisplaynetwork.com/watchnew?key=4d00edeb5e29120a67095839cfb12c33"
+          width="300"
+          height="250"
+          frameBorder="0"
+          scrolling="no"
+          samesite="None"
+        ></iframe>
+      </AdDesktop>
     </MainContainer>
   );
 };
