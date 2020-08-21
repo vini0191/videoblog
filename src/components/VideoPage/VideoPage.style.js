@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const VideoUnit = styled.div`
   display: flex;
@@ -19,13 +19,17 @@ export const VideoUnitTitle = styled.h1`
   }
 `;
 
+export const VideoAndAds = styled.div`
+  /* display: flex; */
+`;
+
 export const VideoContainer = styled.div`
   position: relative;
 
   ::after {
     padding-top: 56.25%;
     display: block;
-    content: '';
+    content: "";
   }
 
   iframe {
@@ -38,31 +42,23 @@ export const VideoContainer = styled.div`
 `;
 
 // Ads below
-export const AdMobile = styled.div`
-  align-self: center;
-  margin-top: 20px;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-`;
-
-export const AdDesktop = styled.div`
+export const AdVertical = styled.div`
+  /* background: orange;
+  border: 2px solid white;
+  width: 320px;
+  height: 100px;
+  align-self: center; */
   display: none;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px auto;
-  }
-`;
-
-export const AdLargeDesktop = styled.div`
-  display: none;
-
-  @media screen and (min-width: 1024px) {
-    display: flex;
-    justify-content: space-evenly;
-    /* margin: 20px auto; */
+    display: block;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    /* width: 728px;
+    height: 90px;
+    align-self: center;
+    margin: 20px 0; */
   }
 `;

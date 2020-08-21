@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar/Navbar.component";
 import Footer from "./components/Footer/Footer.component";
 import Main from "./components/Main/Main.component";
@@ -15,6 +17,7 @@ const App = () => {
 
   return (
     <div id="container">
+      <ToastContainer position="bottom-right" hideProgressBar />
       <Navbar setVideos={setVideos} />
       <div id="main-content">
         <Switch>
