@@ -12,6 +12,10 @@ export const MainContainer = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: row;
+
+  @media screen and (min-width: 768px) {
+    /* max-width: 80vw; */
+  }
 `;
 
 export const MainText = styled.p`

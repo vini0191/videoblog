@@ -19,6 +19,10 @@ export const VideoUnitTitle = styled.h1`
   }
 `;
 
+export const VideoAndAds = styled.div`
+  /* display: flex; */
+`;
+
 export const VideoContainer = styled.div`
   position: relative;
 
@@ -38,34 +42,23 @@ export const VideoContainer = styled.div`
 `;
 
 // Ads below
-export const AdVerticalA = styled.div`
-  background: orange;
+export const AdVertical = styled.div`
+  /* background: orange;
   border: 2px solid white;
   width: 320px;
   height: 100px;
-  align-self: center;
-  margin: 20px auto;
+  align-self: center; */
+  display: none;
 
   @media screen and (min-width: 768px) {
-    width: 728px;
+    display: block;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    /* width: 728px;
     height: 90px;
     align-self: center;
-    margin: 20px 0;
-  }
-`;
-
-export const AdVerticalB = styled.div`
-  background: orange;
-  border: 2px solid white;
-  width: 320px;
-  height: 100px;
-  align-self: center;
-  margin: 20px auto;
-
-  @media screen and (min-width: 768px) {
-    width: 728px;
-    height: 90px;
-    align-self: center;
-    margin: 20px 0;
+    margin: 20px 0; */
   }
 `;

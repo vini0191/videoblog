@@ -53,6 +53,19 @@ const Main = ({ videos }) => {
         trajetória do Timão.
       </MainText>
 
+      {/* <body>
+      <script>
+        (function(__htas) {
+        const d = document,
+        s = d.createElement('script'),
+        l = d.scripts[d.scripts.length - 1];
+        s.settings = __htas || {};
+        s.src = "\/\/ablenctionalle.info\/aXW.Z\/ymQu2K9Qk\/Z\/TD9f6mbt2t5VlJSdWKQ\/9pNsD\/E_1xMTDmAD2bNcyv0H0gMJTUUxwqMVDfY\/4GJUnOBU1Zcc2sh\/aAbG2y5mlWS\/WeQH9CNrDnEG1\/MBDiAl2YN-ya0n0TMWTEUzwbM\/DYYV4a";
+        l.parentNode.insertBefore(s, l);
+        })({})
+      </script>
+      </body> */}
+
       <AdMobile>
         <iframe
           title="mobile_banner"
@@ -92,7 +105,16 @@ const Main = ({ videos }) => {
       </Search>
       <Content>
         <Videos videos={currentFilteredVideos} loading={loading} />
-        <AdTablet />
+        <AdTablet>
+          <iframe
+            title="mobile_banner"
+            src="https://www.topdisplaynetwork.com/watchnew?key=125b9aafbde90afa709434287e9a3ee1"
+            width="160"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </AdTablet>
       </Content>
 
       <AdMobile>
@@ -136,7 +158,7 @@ const Main = ({ videos }) => {
 
       <AdTablet>
         <iframe
-          title="mobile_banner"
+          title="squared_banner"
           src="//www.topdisplaynetwork.com/watchnew?key=4d00edeb5e29120a67095839cfb12c33"
           width="300"
           height="250"
